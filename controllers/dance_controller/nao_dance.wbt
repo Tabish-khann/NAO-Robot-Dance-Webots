@@ -1,0 +1,32 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/softbank/nao/protos/Nao.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/Parquetry.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/BrushedAluminium.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.2615190940929508 0.08635073761244139 0.9613278907524684 2.3712360263808923
+  position 3.3477153327296483 -3.2633501998679604 2.3366521991132267
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 4 4
+  floorAppearance Parquetry {
+    type "chequered"
+    colorOverride 0.1 0.1 0.1
+  }
+  wallAppearance BrushedAluminium {
+    colorOverride 0.4 0.1 1
+  }
+}
+Nao {
+  controller "dance_controller"
+}
